@@ -1,7 +1,7 @@
 "use strict";
 
 const name = "Mitch Cuckovich";
-const age = 25;
+let age = 25;
 const birthday = "January 24";
 const pineapplePizza = false;
 const lifeEvents = [
@@ -25,18 +25,17 @@ for (let i = 0; i < lifeEvents.length; i++) {
   console.log(lifeEvents[i]);
 }
 
-const counter = 0;
+let counter = 0;
 
-while (counter === true) {
-  let randomNumber = Math.floor(Math.random() * 10);
-  if (randomNumber !== 5) {
-    console.log("randomNumber !== 5");
-    counter++;
-  } else {
-    console.log(
-      `5 === 5, it took ${counter} iterations to randomly generate the number 5`
-    );
-    counter++;
-  }
+while (true) {
+  const randomNumber = Math.floor(Math.random() * 10 + 1);
+  console.log(randomNumber);
+ if (randomNumber !== 5) {
+  counter++;
+  console.log("random number!== 5");
+ } else {
+  counter++;
+  console.log(`5 === 5. It took ${counter} iterations to randomly generate the number 5`); 
   break;
+ }
 }
